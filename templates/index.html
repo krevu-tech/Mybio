@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who am i?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+    <div class="vscode">
+        <!-- Activity Bar -->
+        <div class="activity-bar">
+            <div class="icon active">📁</div>
+            <div class="icon">🔍</div>
+            <div class="icon">🔧</div>
+        </div>
+
+        <!-- Side Panel -->
+        <div class="side-panel">
+            <div class="file-tree">
+                <div class="folder">📂 WHO_AM_I</div>
+                <!-- Список файлов будет заполнен через JS, но можно и здесь прописать -->
+                <div class="file" data-file="readme">📄 README.md</div>
+                <div class="file" data-file="about">📄 about.ts</div>
+                <div class="file" data-file="skills">📄 skills.json</div>
+                <div class="file" data-file="projects">📄 projects.tsx</div>
+                <div class="file" data-file="contacts">📄 contacts.sql</div>
+            </div>
+        </div>
+
+        <!-- Editor -->
+        <div class="editor-container">
+            <div class="tabs">
+                <span class="tab active" id="currentTab">README.md</span>
+            </div>
+            <div class="editor-wrapper" id="editorContainer">
+                <!-- Здесь будет размещён Monaco Editor -->
+            </div>
+        </div>
+
+        <!-- Terminal (как в прошлом примере) -->
+        <div class="terminal">
+            <div class="terminal-output" id="terminalOutput"></div>
+            <div class="terminal-input">
+                <span>$</span>
+                <input type="text" id="terminalInput" autofocus />
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем Monaco Editor через CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.min.js"></script>
+    <!-- Наш основной скрипт -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

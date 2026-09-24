@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.vscode {
+  display: flex;
+  height: 100vh;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Activity Bar */
+.activity-bar {
+  width: 48px;
+  background: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.icon {
+  font-size: 22px;
+  padding: 8px 0;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+.icon.active {
+  opacity: 1;
+  border-left: 2px solid white;
+}
+.icon:hover {
+  opacity: 1;
+}
+
+/* Side Panel */
+.side-panel {
+  width: 220px;
+  background: #252526;
+  padding: 10px 0;
+  overflow-y: auto;
+  border-right: 1px solid #3c3c3c;
+}
+
+.file-tree {
+  padding-left: 16px;
+}
+
+.folder {
+  font-weight: 600;
+  color: #cccccc;
+  padding: 6px 0;
+  font-size: 13px;
+}
+
+.file {
+  padding: 4px 0 4px 16px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #b5b5b5;
+  border-radius: 4px;
+  transition: background 0.1s;
+}
+.file:hover {
+  background: #2a2d2e;
+}
+.file.active {
+  background: #37373d;
+  color: #ffffff;
+}
+
+/* Editor */
+.editor-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #1e1e1e;
+}
+
+.tabs {
+  background: #2d2d2d;
+  padding: 4px 10px 0 10px;
+  display: flex;
+  border-bottom: 1px solid #3c3c3c;
+}
+
+.tab {
+  padding: 6px 14px;
+  font-size: 13px;
+  background: #2d2d2d;
+  color: #969696;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  cursor: default;
+}
+.tab.active {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+.editor-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+/* Terminal */
+.terminal {
+  height: 180px;
+  background: #1e1e1e;
+  border-top: 1px solid #3c3c3c;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 16px;
+  font-family: 'Consolas', monospace;
+  font-size: 14px;
+}
+
+.terminal-output {
+  flex: 1;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+.terminal-output div {
+  padding: 1px 0;
+}
+
+.terminal-input {
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+}
+.terminal-input span {
+  color: #569cd6;
+  margin-right: 8px;
+}
+.terminal-input input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #d4d4d4;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
