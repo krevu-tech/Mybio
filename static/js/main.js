@@ -14,15 +14,15 @@ const files = {
     },
     'about': {
         language: 'python',
-        content: `{\n  "name: slavka",\n \n"Age": 14,\n\n"Birthday": 20 September, born in Siberia. \n\n"friends": Faratos, Kuprik\n\n"languages": English, Russian(native), Spanish\n}`
+        content: `{\n  "name: slavka",\n \n"Age": 14,\n\n"Birthday": 20 September, born in Siberia. \n\n"friends": Faratos, Kuprik, Gaiva\n\n"languages": English, Russian(native), Spanish\n}`
     },
     'projects': {
     language: 'javascript',
-    content: `{ \n"Finished (not published)": \n    "beta-tester: LastCup". Official Beta-tester for MilkyWay team.\n\n    Krevu's SFX --- SFX plugin for Sonolus project. \n\n    CatsExpress --- game about postcat on Unreal Engine 4.\n\n"Unfinished": \n\n    allformula.net --- website for f1 fanats.\n\n}`
+    content: `{ \n"Finished (not published)": \n    "beta-tester: LastCup". Official Beta-tester for MilkyWay team.\n\n    Krevu's SFX --- SFX plugin for Sonolus project. \n\n    CatsExpress --- game about postcat on Unreal Engine 4.\n\n"Unfinished": \n\n    allformula.net --- website for f1 fanats.\n\n  \n\n    Yume --- pomodoro and task tracker.\n\n}`
     },
     'contacts': {
         language: 'python',
-        content: `{\n u cant contact me. \n}`
+        content: `{\n u cant contact me. All you can do is check out my GitHub - krevu-tech. :)\n}`
     }
     // ... остальные файлы
 };
